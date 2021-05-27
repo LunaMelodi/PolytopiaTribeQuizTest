@@ -2,6 +2,7 @@ import questions from "./questions.js";
 
 const appContainer = document.querySelector("#appContainer");
 let selectedAnswers = [];
+let test;
 
 const appStart = () => {
   console.log("starting app");
@@ -76,8 +77,6 @@ const buildDisplayQuiz = () => {
 };
 
 const buildQuestionAnswers = (questionNumber) => {
-  let output = [];
-
   let currentQuestionObject = getCurrentQuestionObject(questionNumber);
   console.log(`currentQuestionObject :>> `, currentQuestionObject);
 
@@ -114,14 +113,6 @@ const buildQuestionAnswers = (questionNumber) => {
   nextButton.textContent = buttonText;
   buttonDiv.appendChild(nextButton);
 
-  /* output.push(`${currentQuestionObject.question}`);
-  output.push(`<div id="answerGroup>`);
-  output.push(answers.join(""));
-  output.push("</div>");
-  output.push(
-    `</div><div><button id="questionButton">${buttonText}</button></div>`
-  );
- */
   const errorDiv = document.createElement("div");
   errorDiv.id = "errorMessage";
 
