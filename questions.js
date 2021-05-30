@@ -78,7 +78,7 @@ const questions = [
         id: 3,
         question:
           "Question 3: The tribe moon festival is tomorrow and you want to make your family’s favorite recipe to help celebrate. The dish is a big hit and everyone admires how ____ the dish is.",
-        questionType: "multiple choice",
+        questionType: "pickAny",
         answers: 
         [
           {
@@ -134,7 +134,7 @@ const questions = [
         id: 4,
         question: 
         "Question 4: You need to travel quickly to a battle zone to strike fast, then dash away. Would you chose to ride...",
-        questionType: "multiple choice",
+        questionType: "pickAny",
         answers: 
         [
             {
@@ -204,12 +204,11 @@ const questions = [
                       
             ]
     },
-    ,
     {
         id: 7,
         question: 
         "Question 7: I am very afraid of ...(check all that apply)",
-        questionType: "multiplechoice",
+        questionType: "pickAny",
         answers: 
         [
             {
